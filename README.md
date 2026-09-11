@@ -66,6 +66,35 @@ The fault must remain active for 5 seconds before the system enters the `FAULT` 
 
 This prevents short signal disturbances from immediately triggering a confirmed diagnostic fault.
 
+## Diagnostic Results
+
+### Python Lambda Analysis
+
+The simulated lambda fault is visible between approximately 150 s and 180 s.
+
+![Python Lambda Diagnostics](results/lambda_diagnostics.png)
+
+### Simulink Diagnostic Model
+
+The Simulink model monitors the lambda signal using upper and lower threshold comparisons.
+
+![Simulink Diagnostic Model](results/simulink_model.png)
+
+### Stateflow Diagnostic State Machine
+
+The Stateflow logic introduces a pending state before a diagnostic fault is confirmed.
+
+![Stateflow Diagnostic Logic](results/stateflow_chart.png)
+
+### Fault Confirmation
+
+The blue signal represents the detected threshold violation (`lambda_fault`).
+
+The yellow signal represents the confirmed diagnostic fault (`dtc_active`).  
+The delay between both signals demonstrates the 5-second fault confirmation logic.
+
+![Stateflow Fault Confirmation](results/stateflow_scope.png)
+
 ## Technologies
 
 - Python
