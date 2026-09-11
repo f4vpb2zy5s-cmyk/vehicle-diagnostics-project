@@ -1,0 +1,2 @@
+fault_code,description,time_s,rpm,speed_kmh,coolant_temp_C,throttle_percent,lambda
+SIM_LAMBDA_HIGH,Lambda signal outside diagnostic threshold,154.0,2416.3467381900946,30.685415494537327,89.05060111116806,17.16054805774424,1.1182981537747507

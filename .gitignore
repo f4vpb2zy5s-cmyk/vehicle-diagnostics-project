@@ -1,0 +1,17 @@
+venv/
+.DS_Store
+__pycache__/
+*.pyc
+
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# macOS
+.DS_Store
+
+# MATLAB / Simulink generated files
+*.slxc
+slprj/
+*.asv
